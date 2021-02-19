@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  form(action="/", method="post")
+    p
+      input(type="number" name="num1")
+      | X
+      input(type="number" name="num2")
+    p
+      input(type="submit" value="送信")
+  p
+    div
+      span(id="calc")=output1
+      span(id="result")=output2
+    
